@@ -1,0 +1,11 @@
+<h1>Hello</h1>
+<% n = 0 %>
+<% @posts.each do |post| %>
+  <br>
+  <div><%= n += 1 %></div>
+  <div><span>Title:  </span><%= post.title %></div>
+  <div><span>Post text:  </span><%= post.body %></div>
+<% end %>
+
+<div><%= link_to 'Создать статью', new_post_path %></div>
+
