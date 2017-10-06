@@ -1,11 +1,14 @@
-<h1>Hello</h1>
-<% n = 0 %>
-<% @posts.each do |post| %>
-  <br>
-  <div><%= n += 1 %></div>
-  <div><span>Title:  </span><%= post.title %></div>
-  <div><span>Post text:  </span><%= post.body %></div>
-<% end %>
-
+<div class="top-line"></div>
 <div><%= link_to 'Создать статью', new_post_path %></div>
+<div class="body">
+<% index = 0 %>
+  <% @posts.each do |post| %>
+    <% index += 1 %>
+    <% if index.odd? %>
+      <div class="title"><%= link_to post.title, post_path(post) %></div>
+    <% else %>
+      <div class="title title-even"><%= link_to post.title, post_path(post) %></div>
+    <% end %>
+  <% end %>
+</div>
 

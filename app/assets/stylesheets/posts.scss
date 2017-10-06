@@ -1,3 +1,37 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #f9feff;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+.title {
+  font-size: 24px;
+  padding: 5px 0px 5px 5px;
+  font-weight: bolder;
+  background: linear-gradient(to bottom, #fffcfc, #fcfdff, #e6eef7, #deeaf7);
+  a {
+    text-decoration: none;
+  }
+}
+
+.title-even {
+  padding: 5px 0px 5px 10px;
+}
+
+.top-line {
+  height: 5px;
+  background: linear-gradient(to bottom, #387264, #3f3872);
+}
+
+.post-text {
+  font-size: 18px;
+  line-height: 2;
+}
