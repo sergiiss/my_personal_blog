@@ -5,3 +5,4 @@
 </div>
 
 <div><%= link_to 'To home page', root_path %></div>
+<div><%= link_to 'Delete post', post_path(@post), method: :delete, data: { confirm: 'Are you sure?'} %></div>

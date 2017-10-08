@@ -1,6 +1,5 @@
-<div class="top-line"></div>
-<div><%= link_to 'Создать статью', new_post_path %></div>
-<div class="body">
+<div class="create-botton"><%= link_to 'Создать статью', new_post_path %></div>
+
 <% index = 0 %>
   <% @posts.each do |post| %>
     <% index += 1 %>
@@ -9,6 +8,5 @@
     <% else %>
       <div class="title title-even"><%= link_to post.title, post_path(post) %></div>
     <% end %>
+    <div><%= link_to 'Delete post', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %></div>
   <% end %>
-</div>
-

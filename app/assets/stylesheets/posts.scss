@@ -19,6 +19,7 @@ body {
   background: linear-gradient(to bottom, #fffcfc, #fcfdff, #e6eef7, #deeaf7);
   a {
     text-decoration: none;
+    color: #4d5f68;
   }
 }
 
@@ -34,4 +35,59 @@ body {
 .post-text {
   font-size: 18px;
   line-height: 2;
+}
+
+.create-botton {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 115px;
+  border-radius: 2px;
+  border: 1px solid #2b3338;
+  font-weight: bold;
+  padding: 8px;
+  background-color: #dcedd3;
+  a {
+    text-decoration: none;
+    color: #2b3338;
+  }
+}
+
+.name {
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: top;
+  width: 80px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.bottom-new {
+  margin-left: 84px;
+  input {
+    width: 804px;
+    height: 50px;
+    background: linear-gradient(to left, #d9ead0, #ade590, #8aed57, #ade590, #d9ead0);
+  }
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.form {
+  margin: 10px 0px 0px 5px;
+}
+
+.form-name {
+  input{
+    width: 800px;
+    height: 30px;
+  }
+}
+
+.form-text {
+  textarea {
+    width: 798px;
+    height: 600px;
+    font-size: 1.4em;
+  }
 }

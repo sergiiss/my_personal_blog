@@ -1,17 +1,17 @@
-<div>
+<div class="form">
   <%= form_for @post do |f| %>
     <div>
-      <%= f.label 'Title posts' %>
-      <%= f.text_field :title %>
+      <span class="name"><%= f.label 'Title' %></span>
+      <span class="form-name"><%= f.text_field :title %></span>
     </div>
 
     <div>
-      <%= f.label 'Post' %>
-      <%= f.text_area :body %>
+      <span class="name"><%= f.label 'Text' %></span>
+      <span class="form-text"><%= f.text_area :body %></span>
     </div>
 
     <div>
-      <%= f.submit 'Save post' %>
+      <span class="bottom-new"><%= f.submit 'Save post' %></span>
     </div>
   <% end %>
 </div>
