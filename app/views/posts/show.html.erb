@@ -1,8 +1,11 @@
-<div><%= @post.title %></div>
-<br>
-<div>
+<div class="post-title">
+  <%= @post.title %>
+</div>
+<div class="post-body">
   <%= @post.body %>
 </div>
 
-<div><%= link_to 'To home page', root_path %></div>
+<div><%= link_to 'Edit post', edit_post_path(@post) %></div>
 <div><%= link_to 'Delete post', post_path(@post), method: :delete, data: { confirm: 'Are you sure?'} %></div>
+<br>
+<div><%= link_to 'To home page', root_path %></div>

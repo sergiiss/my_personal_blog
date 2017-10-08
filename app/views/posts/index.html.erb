@@ -1,5 +1,6 @@
-<div class="create-botton"><%= link_to 'Создать статью', new_post_path %></div>
-
+<div class="create-botton"><%= link_to 'Create post', new_post_path %></div>
+<br>
+<h1 style="color: #4d5f68;">List of posts</h1>
 <% index = 0 %>
   <% @posts.each do |post| %>
     <% index += 1 %>
@@ -8,5 +9,4 @@
     <% else %>
       <div class="title title-even"><%= link_to post.title, post_path(post) %></div>
     <% end %>
-    <div><%= link_to 'Delete post', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %></div>
   <% end %>

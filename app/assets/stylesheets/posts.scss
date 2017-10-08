@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: #f9feff;
+  background-color: #fbfbf9;
   margin: 0px;
   padding: 0px;
 }
@@ -10,6 +10,8 @@ body {
 .body {
   max-width: 1400px;
   margin: 0px auto;
+  min-height: 920px;
+  background-color: #fdfdfd;
 }
 
 .title {
@@ -41,12 +43,13 @@ body {
   position: absolute;
   top: 10px;
   left: 5px;
-  width: 115px;
+  width: 105px;
   border-radius: 2px;
   border: 1px solid #2b3338;
   font-weight: bold;
   padding: 8px;
   background-color: #dcedd3;
+  text-align: center;
   a {
     text-decoration: none;
     color: #2b3338;
@@ -81,6 +84,7 @@ body {
   input{
     width: 800px;
     height: 30px;
+    font-size: 1.5em;
   }
 }
 
@@ -90,4 +94,18 @@ body {
     height: 600px;
     font-size: 1.4em;
   }
+}
+
+.post-title {
+  font-size: 1.7em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.post-body {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 60%;
+  margin-bottom: 40px;
 }
