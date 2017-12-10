@@ -1,12 +1,13 @@
 <div class="create-botton"><%= link_to 'Create post', new_post_path %></div>
 <br>
 <h1 style="color: #4d5f68;">List of posts</h1>
+
 <% index = 0 %>
-  <% @posts.each do |post| %>
-    <% index += 1 %>
-    <% if index.odd? %>
-      <div class="title"><%= link_to post.title, post_path(post) %></div>
-    <% else %>
-      <div class="title title-even"><%= link_to post.title, post_path(post) %></div>
-    <% end %>
+<% @posts.each do |post| %>
+  <% index += 1 %>
+  <% if index.odd? %>
+    <div class="title"><%= link_to post.title, post_path(post) %></div>
+  <% else %>
+    <div class="title title-even"><%= link_to post.title, post_path(post) %></div>
   <% end %>
+<% end %>
