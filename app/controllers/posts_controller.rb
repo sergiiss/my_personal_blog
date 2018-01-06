@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
-    @post.save ? redirect_to @post : redirect_to new_post_path
+    @post.save ? (redirect_to @post) : (redirect_to new_post_path)
   end
 
   def show
@@ -24,7 +24,7 @@ class PostsController < ApplicationController
   def update
     set_post
 
-    @post.update_attributes(post_params) ? redirect_to @post : render :edit
+    @post.update_attributes(post_params) ? (redirect_to @post) : (render :edit)
   end
 
   def destroy
